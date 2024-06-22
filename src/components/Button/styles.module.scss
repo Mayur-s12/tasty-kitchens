@@ -1,0 +1,10 @@
+@import "../../theme/colors.scss";
+
+.button {
+  width: 82%;
+  //   padding-left: ;
+  height: 40px;
+  border-radius: 8px;
+  background-color: $button-background;
+  color: white;
+}

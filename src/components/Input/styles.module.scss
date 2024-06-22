@@ -1,0 +1,17 @@
+@import "../../theme/colors.scss";
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  .input {
+    background-color: $input-color;
+    border: none;
+    outline: none;
+    width: 360px;
+    height: 40px;
+    border-radius: 2px 0px 0px 0px;
+    opacity: 0px;
+    padding-left: 10px;
+  }
+}
