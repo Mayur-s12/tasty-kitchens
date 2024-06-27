@@ -1,11 +1,26 @@
 import { ButtonHTMLAttributes } from "react";
 import styles from "./styles.module.scss";
 
-interface IProps extends ButtonHTMLAttributes<HTMLButtonElement> {}
+interface IProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+  width?: string;
+  height?: string;
+  className?: string;
+}
 
-const Button: React.FC<IProps> = ({ children, type, ...props }) => {
+const Button: React.FC<IProps> = ({
+  children,
+  type,
+  width,
+  height,
+  className,
+  ...props
+}) => {
   return (
-    <button className={styles.button} {...props}>
+    <button
+      style={{ width: width, height: height }}
+      className={`${styles.button} ${className}`}
+      {...props}
+    >
       {children}
     </button>
   );
